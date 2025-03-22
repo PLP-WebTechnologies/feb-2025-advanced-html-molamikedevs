@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 Project</title>
+    <!-- Styling wasn't part of the instructions but just wanted a little bit of good look especially on the contact table and the image, hope that's not a problem??   -->
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        img { width: 200px; height: 200px; }
+    </style>
+</head>
+<body>
+    <!-- Ordered List with Roman Numerals -->
+    <h1>Ordered List (Roman Numerals)</h1>
+    <ol type="I">
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <li>Fourth Item</li>
+        <li>Fifth Item</li>
+    </ol>
+
+    <!-- External Image -->
+    <h1>External Image</h1>
+    <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg" alt="Pexels Example" width="600">
+
+    <!-- Contacts Table -->
+    <h1>Contacts Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>12 Neftcheler</td>
+                <td>+994567890</td>
+                <td>johndoe@example.com</td>
+            </tr>
+            <tr>
+                <td>Alhaji Kamara</td>
+                <td>456 Freetown Road</td>
+                <td>+2327654321</td>
+                <td>kamaraalhaji@example.com</td>
+            </tr>
+            <tr>
+                <td>Christian Bull</td>
+                <td>789 Maple Ave</td>
+                <td>+99422334455</td>
+                <td>christioanbull@example.com</td>
+            </tr>
+            <tr>
+                <td>Emily Johnson</td>
+                <td>101 Oak St</td>
+                <td>+5566778899</td>
+                <td>emilyj@example.com</td>
+            </tr>
+            <tr>
+                <td>Michael Sesay</td>
+                <td>202 Pyke St</td>
+                <td>+23277889900</td>
+                <td>michaels@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h1>Registration Form</h1>
+    <form action="#" method="post">
+        <!-- Name Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6"><br><br>
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select a country</option>
+            <option value="sierra leone">Sierra Leone</option>
+            <option value="canada">Canada</option>
+            <option value="kenya">Kenya</option>
+            <option value="australia">Australia</option>
+        </select><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label><br><br>
+
+        <!-- Checkboxes -->
+        <label>Interests:</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label><br>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label><br>
+        <input type="checkbox" id="reading" name="interests" value="reading">
+        <label for="reading">Reading</label><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
